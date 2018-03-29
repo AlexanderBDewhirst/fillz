@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title
+      Fillz
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    -# = yield(:head)
+
+  %body
+    -# = Gon::Base.render_data
+    .main-container.container-fluid
+      .page-content
+        = yield
+
+

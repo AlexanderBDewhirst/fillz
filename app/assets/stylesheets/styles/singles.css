@@ -1,0 +1,23 @@
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.btn-info {
+    background-color: #f3f9fc;
+    border-color: #1585cf;
+    border-width: 1px;
+}
+
+.btn-primary {
+    background-color: #1585cf;
+}
+
+.btn-default {
+    background-color: #f3f9fc;
+    border-color: #1585cf;
+    border-width: 1px;
+}
