@@ -1,0 +1,23 @@
+%div{style: "height: 80px; background: #2b3545;"}
+    .col-sm-12
+        .row
+            .col-sm-1
+            .col-sm-1
+                %h3.text-white.margin-top-20
+                    FILLZ
+            .col-sm-6
+            - if current_user.present?
+                .col-sm-1
+                .col-sm-1.text-center.margin-top-25
+                    = link_to "FEATURES", "#features", class: "text-white remove_link_formatting"
+                .col-sm-1.text-center.margin-top-25
+                    = link_to "SIGN OUT", destroy_user_session_path(), method: "delete", class: "text-white remove_link_formatting"
+            - else
+                .col-sm-1.text-center.margin-top-25
+                    = link_to "FEATURES", "#features", class: "text-white remove_link_formatting"
+                .col-sm-1.text-center.margin-top-25
+                    = link_to "LOG IN", new_user_session_path(), method: "get", class: "text-white remove_link_formatting"
+                .col-sm-1.text-center.margin-top-25
+                    = link_to "SIGN UP", new_user_registration_path(), class: "text-white remove_link_formatting"
+            
+    

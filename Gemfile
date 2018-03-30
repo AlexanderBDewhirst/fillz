@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Devise user auth
+gem 'devise'
 # HAML markup language for rails
 gem 'haml'
 # jQuery for rails
@@ -13,10 +15,14 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0'
 # Bootstrap 4 requires rails-sprockets
 gem 'sprockets-rails', :require => 'sprockets/railtie'
+# Bootstrap sass
+gem 'bootstrap-sass', '~> 3.3.7'
 # Bootstrap select_picker gem
 gem 'bootstrap-select-rails'
 # Bootstrap chosen gem
 gem 'bootstrap-chosen-rails'
+# asset pipeline gem for underscore.js
+gem 'underscore-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'

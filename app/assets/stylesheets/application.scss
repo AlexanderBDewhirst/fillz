@@ -11,13 +11,13 @@
  * It is generally better to create a new file per style scope.
  *
  */
-@import "bootstrap-sprockets";
+// @import "bootstrap-sprockets";
 @import "bootstrap";
 
 @import "bootstrap-select";
 // @import "bootstrap-datepicker";
-@import "chosen";
-@import "bootstrap-chosen";
+// @import "chosen";
+// @import "bootstrap-chosen";
 
 // Core variables and mixins
 @import "bootstrap/variables";

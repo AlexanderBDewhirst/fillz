@@ -1,0 +1,30 @@
+.page-body{style: "background: transparent;"}
+  = render partial: "pages/navigation_bar"
+  %div{style: "width: 100%;"}
+    .row.padding-top-30
+      %div.margin-auto{style: "width: 640px; height: 400px;"}  
+        %h3.margin-top-30.text-center.text-grey
+          Sign Up
+        %hr
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = devise_error_messages!
+          .form-group.field
+            = f.label "email"
+            = f.email_field "email", autofocus: true, autocomplete: "email", class: "form-control"
+
+          .form-group.field
+            = f.label "password"
+            %br
+            - if @minimum_password_length
+              .text-small.text-red.margin-bottom-5
+                = "#{@minimum_password_length} characters minimum"
+            = f.password_field "password", autocomplete: "off", class: "form-control"
+
+          .form-group.field
+            = f.label "password_confirmation"
+            = f.password_field "password_confirmation", autocomplete: "off", class: "form-control"
+
+          .form-group.pull-right.actions
+            = f.submit "Sign Up", class: "btn btn-default btn-md"
+          .form-group.pull-left
+            = render "devise/shared/links"

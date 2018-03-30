@@ -1,24 +1,17 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Fillz
 
-Things you may want to cover:
+This project has been created to work with Ruby on Rails configurations and assets pipeline.
 
 * Ruby version
+    .ruby-version overrides the system ruby for rbenv to maintain for source control
+    2.5.0p0
 
 * System dependencies
 
 * Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
-
-* ...
+    bundle install
+    rails server
+        localhost defaults to 9000
